@@ -21,7 +21,7 @@ declare -a restorebackup=(
 for i in "${restorebackup[@]}"
 do
   echo -n 'Restoring $i from external to local machine...'
-  cp -rf $BACKUPLOCATION$i "~$i" #>/dev/null 2>&1
+  cp -rf "$BACKUPLOCATION$i" "~$i" #>/dev/null 2>&1
   echo ' DONE!'
 done
 
