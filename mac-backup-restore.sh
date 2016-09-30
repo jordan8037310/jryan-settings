@@ -29,9 +29,7 @@ done
 MYSQLWORKBENCHLOCATION="/Library/Application Support/MySQL/Workbench/"
 
 declare -a mysqlworkbenchfiles=(
-'connections.xml'
-'server_instances.xml'
-'wb_options.xml'
+'*.xml' # Get all XML Config Files
 )
 
 for i in "${mysqlworkbenchfiles[@]}"

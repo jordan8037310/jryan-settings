@@ -17,10 +17,7 @@ declare -a manbackup=(
 'Sites'
 'Pictures'
 'Downloads'
-# @TODO - Fix the copying of full paths with a --parents flag, following paths will error
-'Library/Application Support/MySQL/Workbench/connections.xml'
-'Library/Application Support/MySQL/Workbench/server_instances.xml'
-'Library/Application Support/MySQL/Workbench/wb_options.xml'
+'Library/Application Support/MySQL/Workbench/*.xml'
 )
 
 for i in "${manbackup[@]}"
