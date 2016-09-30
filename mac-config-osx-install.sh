@@ -93,6 +93,7 @@ declare -a casks=(
 'silverlight'
 'skype'
 'slack'
+'soapui'
 'soundnode'
 'sourcetree'
 'sublime-text'
