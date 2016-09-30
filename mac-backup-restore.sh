@@ -2,6 +2,7 @@
 
 # AFTER fresh Mac OS X Install, restore all of the folders you backed up with mac-backup.sh
 
+USERROOT="/Users/jordanryan"
 BACKUPLOCATION="/Volumes/My\ Book/ReformatBackups/20160929"
 
 declare -a restorebackup=(
@@ -21,7 +22,7 @@ declare -a restorebackup=(
 for i in "${restorebackup[@]}"
 do
   echo -n 'Restoring $i from external to local machine...'
-  cp -rf "$BACKUPLOCATION$i" "~$i" #>/dev/null 2>&1
+  cp -rf "${BACKUPLOCATION}${i}" "${USERROOT}${i}" #>/dev/null 2>&1
   echo ' DONE!'
 done
 
@@ -36,6 +37,6 @@ declare -a mysqlworkbenchfiles=(
 for i in "${mysqlworkbenchfiles[@]}"
 do
   echo -n 'Restoring $i from external to local machine...'
-  cp -rf "${BACKUPLOCATION}${i}" "~$MYSQLWORKBENCHLOCATION$i" #>/dev/null 2>&1
+  cp -rf "${BACKUPLOCATION}${i}" "${USERROOT}${MYSQLWORKBENCHLOCATION}${i}" #>/dev/null 2>&1
   echo ' DONE!'
 done
