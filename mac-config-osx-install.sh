@@ -78,6 +78,7 @@ declare -a casks=(
 'google-chrome'
 'google-drive'
 'iterm2'
+'java'
 'kimono'
 'kindle'
 'logitech-harmony'
