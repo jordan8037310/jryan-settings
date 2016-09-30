@@ -2,25 +2,25 @@
 
 # Prior to fresh Mac OS X Install, backup all of the folders you will want to restore right away
 
-USERROOT="/Users/jordanryan"
-BACKUPLOCATION="/Volumes/My Book/ReformatBackups/20160929"
+USERROOT="/Users/jordanryan/"
+BACKUPLOCATION="/Volumes/My Book/ReformatBackups/20160929/"
 
 declare -a manbackup=(
-'/.ssh'
-'/.bash_profile'
-'/.bashrc'
-'/.gitconfig'
-'/.gitignore_global'
-'/.openvpn-connect.json'
-'/.drush'
-'/GitHub'
-'/Sites'
-'/Pictures'
-'/Downloads'
+'.ssh'
+'.bash_profile'
+'.bashrc'
+'.gitconfig'
+'.gitignore_global'
+'.openvpn-connect.json'
+'.drush'
+'GitHub'
+'Sites'
+'Pictures'
+'Downloads'
 # @TODO - Fix the copying of full paths with a --parents flag, following paths will error
-'/Library/Application Support/MySQL/Workbench/connections.xml'
-'/Library/Application Support/MySQL/Workbench/server_instances.xml'
-'/Library/Application Support/MySQL/Workbench/wb_options.xml'
+'Library/Application Support/MySQL/Workbench/connections.xml'
+'Library/Application Support/MySQL/Workbench/server_instances.xml'
+'Library/Application Support/MySQL/Workbench/wb_options.xml'
 )
 
 for i in "${manbackup[@]}"

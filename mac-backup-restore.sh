@@ -2,21 +2,21 @@
 
 # AFTER fresh Mac OS X Install, restore all of the folders you backed up with mac-backup.sh
 
-USERROOT="/Users/jordanryan"
-BACKUPLOCATION="/Volumes/My Book/ReformatBackups/20160929"
+USERROOT="/Users/jordanryan/"
+BACKUPLOCATION="/Volumes/My Book/ReformatBackups/20160929/"
 
 declare -a restorebackup=(
-'/.ssh'
-'/.bash_profile'
-'/.bashrc'
-'/.gitconfig'
-'/.gitignore_global'
-'/.openvpn-connect.json'
-'/.drush'
-'/GitHub'
-'/Sites'
-'/Pictures'
-'/Downloads'
+'.ssh'
+'.bash_profile'
+'.bashrc'
+'.gitconfig'
+'.gitignore_global'
+'.openvpn-connect.json'
+'.drush'
+'GitHub'
+'Sites'
+'Pictures'
+'Downloads'
 )
 
 for i in "${restorebackup[@]}"
@@ -26,7 +26,7 @@ do
   echo ' DONE!'
 done
 
-MYSQLWORKBENCHLOCATION="/Library/Application Support/MySQL/Workbench"
+MYSQLWORKBENCHLOCATION="/Library/Application Support/MySQL/Workbench/"
 
 declare -a mysqlworkbenchfiles=(
 'connections.xml'
@@ -37,6 +37,6 @@ declare -a mysqlworkbenchfiles=(
 for i in "${mysqlworkbenchfiles[@]}"
 do
   echo -n "Restoring ${i} from external to local machine..."
-  cp -rf "${BACKUPLOCATION}${i}" "${USERROOT}${MYSQLWORKBENCHLOCATION}${i}" #>/dev/null 2>&1
+  cp --parents "${BACKUPLOCATION}${i}" "${USERROOT}${MYSQLWORKBENCHLOCATION}${i}" #>/dev/null 2>&1
   echo ' DONE!'
 done
