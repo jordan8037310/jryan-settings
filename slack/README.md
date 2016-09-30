@@ -11,3 +11,6 @@ Custom Slack Theme: `#6fa36f,#3E313C,#01690b,#ffff00,#3E313C,#ffffff,#faff78,#ed
 
 ## Legacy
 Custom Slack Theme: `#285999,#5c5c5c,#ffffff,#000000,#434745,#ffffff,#62d14b,#c23639`
+
+## Axelerant
+Custom Slack Theme: `#f56747,#ffffff,#f0a16c,#FFFFFF,#080808,#FFFFFF,#913333,#418ef2`
