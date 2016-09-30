@@ -1,20 +1,22 @@
 #!/usr/bin/env bash
 
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
-fi
+# Don't run as root, messes with permissions of installs
 
 # first run (Uncomment):
-install xcode-cli-tools
-xcode-select --install
+#install xcode-cli-tools
+#xcode-select --install
 
-echo -n 'Installing homebrew...'
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" >/dev/null 2>&1
-echo ' DONE!'
+#echo -n "Installing homebrew..."
+#/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+#echo ' DONE!'
 
 # install caskroom
-caskroom/cask/brew-cask
+brew install caskroom/cask/brew-cask
+
+# Need more Taps for ze phps
+brew tap homebrew/php
+
+# Set the Applications Directory for Cask Installs
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Tap those brews, brew
@@ -44,8 +46,8 @@ declare -a brews=(
 
 for i in "${brews[@]}"
 do
-  echo -n 'Installing $i from homebrew...'
-  brew install "$i" >/dev/null 2>&1
+  echo -n "Installing ${i} from homebrew..."
+  brew install "$i"
   echo ' DONE!'
 done
 
@@ -66,6 +68,7 @@ declare -a casks=(
 'flux'
 'gdrive'
 'google-chrome'
+'google-drive'
 'iterm2'
 'kimono'
 'kindle'
@@ -95,9 +98,9 @@ declare -a casks=(
 
 for i in "${casks[@]}"
 do
-  echo -n 'Installing $i from caskroom...'
-  brew cask install "$i" >/dev/null 2>&1
-  echo ' DONE!'
+  echo -n "Installing ${i} from caskroom..."
+  brew cask install "${i}" >/dev/null 2>&1
+  echo " DONE!"
 done
 
 # Clean things up
