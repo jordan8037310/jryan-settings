@@ -15,6 +15,8 @@ brew install caskroom/cask/brew-cask
 
 # Need more Taps for ze phps
 brew tap homebrew/php
+brew tap homebrew/dupes
+brew tap homebrew/versions
 
 # Set the Applications Directory for Cask Installs
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -34,7 +36,7 @@ declare -a brews=(
 'legit'
 # Drupal
 'drush'
-'terminus'
+'homebrew/php/terminus'
 'drupal-code-sniffer'
 # Env
 'python'
