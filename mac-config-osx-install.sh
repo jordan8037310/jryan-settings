@@ -53,6 +53,12 @@ do
   echo ' DONE!'
 done
 
+# Download miscellaneous config files
+## Terminus
+terminus help && q # init ~/.terminus
+cd ~/.terminus/
+wget "https://github.com/pantheon-systems/terminus/blob/master/utils/terminus-completion.bash"
+
 # Uncork those casks
 declare -a casks=(
 'acquia-dev-desktop'
