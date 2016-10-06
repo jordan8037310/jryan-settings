@@ -38,3 +38,15 @@ do
   cp --parents "${BACKUPLOCATION}${i}" "${USERROOT}${MYSQLWORKBENCHLOCATION}${i}" #>/dev/null 2>&1
   echo ' DONE!'
 done
+
+# non-user config Files
+declare -a configbackup=(
+'/Applications/DevDesktop/mysql/my.cnf'
+)
+
+for i in "${configbackup[@]}"
+do
+  echo -n "Restoring ${i} from external to local machine..."
+  cp --parents "${BACKUPLOCATION}${i}" "${i}" #>/dev/null 2>&1
+  echo ' DONE!'
+done

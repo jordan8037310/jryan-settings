@@ -26,3 +26,15 @@ do
   cp -rf "${USERROOT}${i}" "${BACKUPLOCATION}${i}" #>/dev/null 2>&1
   echo ' DONE!'
 done
+
+# non-user config Files
+declare -a configbackup=(
+'/Applications/DevDesktop/mysql/my.cnf'
+)
+
+for i in "${configbackup[@]}"
+do
+  echo -n "Backing up ${i} from local machine to external..."
+  cp --parents "${i}" "${BACKUPLOCATION}${i}" #>/dev/null 2>&1
+  echo ' DONE!'
+done
