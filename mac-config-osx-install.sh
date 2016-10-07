@@ -75,6 +75,7 @@ declare -a casks=(
 'flash'
 'flux'
 'gdrive'
+'gitter'
 'google-chrome'
 'google-drive'
 'iterm2'
