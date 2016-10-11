@@ -44,6 +44,7 @@ declare -a brews=(
 'php56'
 'php56-igbinary'
 'php56-memcached'
+'npm'
 )
 
 for i in "${brews[@]}"
