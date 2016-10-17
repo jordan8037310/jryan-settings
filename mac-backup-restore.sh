@@ -42,6 +42,7 @@ done
 # non-user config Files
 declare -a configbackup=(
 '/Applications/DevDesktop/mysql/my.cnf',
+# Version number may need to be updated before running
 '/usr/local/Cellar/stash-cli/5.3.0/bin/atlassian'
 )
 
