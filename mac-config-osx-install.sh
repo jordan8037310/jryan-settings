@@ -45,6 +45,8 @@ declare -a brews=(
 'php56-igbinary'
 'php56-memcached'
 'npm'
+# Project Management
+'atlassian-cli'
 )
 
 for i in "${brews[@]}"
