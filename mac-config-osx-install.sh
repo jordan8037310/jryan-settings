@@ -38,12 +38,17 @@ declare -a brews=(
 'drush'
 'homebrew/php/terminus'
 'drupal-code-sniffer'
-# Env
+# Python
 'python'
+# Platform
 'memcached'
+# PHP
 'php56'
 'php56-igbinary'
 'php56-memcached'
+# Ruby
+'ruby'
+# Node
 'npm'
 # Project Management
 'atlassian-cli'
@@ -114,6 +119,20 @@ for i in "${casks[@]}"
 do
   echo -n "Installing ${i} from caskroom..."
   brew cask install "${i}" >/dev/null 2>&1
+  echo " DONE!"
+done
+
+# Install some Ruby Utils
+
+# Uncork those casks
+declare -a gems=(
+'wraith'
+)
+
+for i in "${gems[@]}"
+do
+  echo -n "Installing ${i} from gems..."
+  gem install "${i}" >/dev/null 2>&1
   echo " DONE!"
 done
 
