@@ -29,6 +29,7 @@ declare -a brews=(
 'curl'
 'unrar'
 'mtr'
+'phantomjs'
 # Dev Tools
 'git'
 'composer'
@@ -42,6 +43,7 @@ declare -a brews=(
 'python'
 # Platform
 'memcached'
+'imagemagick'
 # PHP
 'php56'
 'php56-igbinary'
