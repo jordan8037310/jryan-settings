@@ -18,11 +18,19 @@ brew tap homebrew/php
 brew tap homebrew/dupes
 brew tap homebrew/versions
 
+# Taps Ahoy!
+brew tap devinci-code/tap
+
 # Set the Applications Directory for Cask Installs
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Tap those brews, brew
 declare -a brews=(
+# Shell
+'bash'
+'bash-completion'
+# install Ahoy V2, --HEAD is required
+'ahoy --HEAD'
 # Utils
 'thefuck'
 'wget'
