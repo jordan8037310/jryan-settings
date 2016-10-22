@@ -26,7 +26,7 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 # Tap those brews, brew
 declare -a brews=(
-# Shell
+# Shells
 'bash'
 'bash-completion'
 # install Ahoy V2, --HEAD is required
@@ -47,6 +47,7 @@ declare -a brews=(
 'drush'
 'homebrew/php/terminus'
 'drupal-code-sniffer'
+'homebrew/php/drupalconsole'
 # Python
 'python'
 # Platform
