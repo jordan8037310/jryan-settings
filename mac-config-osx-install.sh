@@ -13,13 +13,22 @@
 # install caskroom
 brew install caskroom/cask/brew-cask
 
-# Need more Taps for ze phps
-brew tap homebrew/php
-brew tap homebrew/dupes
-brew tap homebrew/versions
+# Need more Taps
+declare -a taps=(
+# for ze phps
+'homebrew/php'
+'homebrew/dupes'
+'homebrew/versions'
+# Ahoy!
+'devinci-code/tap'
+)
 
-# Taps Ahoy!
-brew tap devinci-code/tap
+for i in "${taps[@]}"
+do
+  echo -n "Tapping ${i} from homebrew..."
+  brew tap "$i"
+  echo ' DONE!'
+done
 
 # Set the Applications Directory for Cask Installs
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
@@ -103,8 +112,10 @@ declare -a casks=(
 'kindle'
 'logitech-harmony'
 'logitech-unifying'
+'mamp'
 'microsoft-office'
 'mysqlworkbench'
+'oversight'
 'phpstorm'
 'plex-home-theater'
 'postbox'
@@ -132,6 +143,8 @@ do
   brew cask install "${i}" >/dev/null 2>&1
   echo " DONE!"
 done
+
+open /usr/local/Caskroom/oversight/1.0.0/OverSight_Installer.app && \
 
 # Install some Ruby Utils
 
