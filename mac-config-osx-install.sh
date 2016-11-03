@@ -47,6 +47,7 @@ declare -a brews=(
 'unrar'
 'mtr'
 'phantomjs'
+'coreutils'
 # Dev Tools
 'git'
 'composer'
