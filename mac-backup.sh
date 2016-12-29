@@ -3,7 +3,7 @@
 # Prior to fresh Mac OS X Install, backup all of the folders you will want to restore right away
 
 USERROOT="/Users/jordanryan/"
-BACKUPLOCATION="/Volumes/My Book/ReformatBackups/20160929/"
+BACKUPLOCATION="/Volumes/My Book/ReformatBackups/20161121/"
 
 declare -a manbackup=(
 '.ssh'
