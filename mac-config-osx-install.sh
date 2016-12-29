@@ -119,6 +119,7 @@ declare -a casks=(
 'oversight'
 'phpstorm'
 'plex-home-theater'
+'private-internet-access'
 'postbox'
 'quickbooks'
 'ringcentral'
@@ -160,6 +161,12 @@ do
   gem install "${i}" >/dev/null 2>&1
   echo " DONE!"
 done
+
+# Get some random packages that aren't set up with brew
+curl -s "http://dn.ringcentral.com/data/web/download/RCMeetings/1210/RCMeetingsClientSetup.pkg"
+open RCMeetingsClientSetup.pkg && \
+curl -s "http://www.logitech.com/pub/video/quickcam/lws220.dmg"
+open lws220.dmg && \
 
 # Clean things up
 brew update && \
