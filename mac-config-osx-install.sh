@@ -167,6 +167,7 @@ curl -s "http://dn.ringcentral.com/data/web/download/RCMeetings/1210/RCMeetingsC
 open RCMeetingsClientSetup.pkg && \
 curl -s "http://www.logitech.com/pub/video/quickcam/lws220.dmg"
 open lws220.dmg && \
+open /Volumes/Logitech\ Webcam\ Software\ v2.2.13/Logitech\ Webcam\ Software.mpkg && \
 
 # Clean things up
 brew update && \
