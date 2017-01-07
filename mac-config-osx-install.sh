@@ -68,6 +68,7 @@ declare -a brews=(
 'php56-igbinary'
 'php56-memcached'
 'php71'
+'brew-php-switcher'
 # Ruby
 'ruby'
 # Node
