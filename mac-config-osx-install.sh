@@ -60,6 +60,7 @@ declare -a brews=(
 'homebrew/php/drupalconsole'
 # Python
 'python'
+'python3'
 # Platform
 'memcached'
 'imagemagick'
