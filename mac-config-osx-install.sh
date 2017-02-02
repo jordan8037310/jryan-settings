@@ -165,6 +165,21 @@ do
   echo " DONE!"
 done
 
+# Install some Node Utils
+
+# declare the packages
+declare -a npms=(
+'gulp-cli -g'
+'gulp -D'
+)
+
+for i in "${npms[@]}"
+do
+  echo -n "Installing ${i} from npms..."
+  npm install "${i}" > /dev/null 2>&1
+  echo " DONE!"
+done
+
 # Get some random packages that aren't set up with brew
 curl -s "http://dn.ringcentral.com/data/web/download/RCMeetings/1210/RCMeetingsClientSetup.pkg"
 open RCMeetingsClientSetup.pkg && \
