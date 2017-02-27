@@ -123,7 +123,7 @@ declare -a casks=(
 'phpstorm'
 'plex-home-theater'
 'private-internet-access'
-'postbox'
+'pycharm'
 'quickbooks'
 'ringcentral'
 'screaming-frog-seo-spider'
