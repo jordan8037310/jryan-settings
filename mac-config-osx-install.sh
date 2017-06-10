@@ -194,3 +194,6 @@ brew cleanup && \
 brew cask cleanup && \
 brew doctor &&\
 brew tap caskroom/versions
+
+# Turn off Gestures in Chrome so you can't swipe back button / forward button on pages
+defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
