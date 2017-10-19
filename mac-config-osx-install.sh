@@ -106,7 +106,7 @@ declare -a casks=(
 'firefox'
 'flash'
 'flux'
-'gdrive'
+'google-backup-and-sync'
 'gitter'
 'google-chrome'
 'google-drive'
