@@ -93,6 +93,7 @@ wget "https://github.com/pantheon-systems/terminus/blob/master/utils/terminus-co
 
 # Uncork those casks
 declare -a casks=(
+'4k-video-downloader'
 'acquia-dev-desktop'
 'alfred'
 'atom'
@@ -114,9 +115,12 @@ declare -a casks=(
 'java'
 'kimono'
 'kindle'
+'lastfm'
+'lastpass'
 'logitech-harmony'
 'logitech-unifying'
 'mamp'
+'megasync'
 'microsoft-office'
 'mysqlworkbench'
 'oversight'
@@ -137,6 +141,7 @@ declare -a casks=(
 'transmit'
 'tunnelblick'
 'tweetdeck'
+'tunnelblick'
 'virtualbox'
 'vlc'
 'zoomus'
@@ -186,6 +191,8 @@ open RCMeetingsClientSetup.pkg && \
 curl -s "http://www.logitech.com/pub/video/quickcam/lws220.dmg"
 open lws220.dmg && \
 open /Volumes/Logitech\ Webcam\ Software\ v2.2.13/Logitech\ Webcam\ Software.mpkg && \
+
+echo "Download OpenVPN manually!"
 
 # Clean things up
 brew update && \
