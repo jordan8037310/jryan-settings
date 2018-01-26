@@ -53,7 +53,7 @@ declare -a brews=(
 'composer'
 'webkit2png'
 'legit'
-'redis-cli'
+'redis'
 # Drupal
 'drush'
 'homebrew/php/terminus'
