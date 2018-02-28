@@ -21,6 +21,8 @@ declare -a taps=(
 'homebrew/versions'
 # Ahoy!
 'devinci-code/tap'
+# Cask Management
+'buo/cask-upgrade'
 )
 
 for i in "${taps[@]}"
@@ -108,7 +110,7 @@ declare -a casks=(
 'firefox'
 'flash'
 'flux'
-'google-backup-and-sync'
+'google-drive-file-stream'
 'gitter'
 'google-chrome'
 'google-drive'
@@ -177,6 +179,7 @@ done
 declare -a npms=(
 'gulp-cli -g'
 'gulp -D'
+'wappalyzer-cli -g'
 )
 
 for i in "${npms[@]}"
