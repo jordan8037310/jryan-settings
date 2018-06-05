@@ -50,6 +50,7 @@ declare -a brews=(
 'mtr'
 'phantomjs'
 'coreutils'
+'openssl'
 # Dev Tools
 'git'
 'composer'
@@ -203,8 +204,19 @@ brew update && \
 `brew outdated` && \
 brew cleanup && \
 brew cask cleanup && \
-brew doctor &&\
+brew doctor && \
 brew tap caskroom/versions
 
 # Turn off Gestures in Chrome so you can't swipe back button / forward button on pages
 defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+
+# Block bad domains in the hosts file
+# Ref: https://github.com/drduh/macOS-Security-and-Privacy-Guide#dns
+curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/hosts
+curl "https://github.com/l1k/osxparanoia/blob/master/hosts" | sudo tee -a /etc/hosts
+curl "http://someonewhocares.org/hosts/zero/hosts" | sudo tee -a /etc/hosts
+
+# Disable Captive Portals
+# Ref: https://github.com/drduh/macOS-Security-and-Privacy-Guide#captive-portal
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
+
