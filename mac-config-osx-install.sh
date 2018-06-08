@@ -103,6 +103,7 @@ declare -a casks=(
 'atom'
 'balsamiq-mockups'
 'calibre'
+'chatmate-for-fb'
 'datagrip'
 'docker'
 'dropbox'
@@ -125,6 +126,7 @@ declare -a casks=(
 'logitech-unifying'
 'mamp'
 'megasync'
+'messenger'
 'microsoft-office'
 'mysqlworkbench'
 'oversight'
@@ -143,6 +145,7 @@ declare -a casks=(
 'sourcetree'
 'sublime-text'
 'transmit'
+'telegram'
 'tunnelblick'
 'tweetdeck'
 'tunnelblick'
@@ -219,4 +222,3 @@ curl "http://someonewhocares.org/hosts/zero/hosts" | sudo tee -a /etc/hosts
 # Disable Captive Portals
 # Ref: https://github.com/drduh/macOS-Security-and-Privacy-Guide#captive-portal
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
-
