@@ -80,6 +80,8 @@ declare -a brews=(
 'npm'
 # Project Management
 'atlassian-cli'
+# CLI tools
+'s3cmd'
 )
 
 for i in "${brews[@]}"
@@ -112,6 +114,7 @@ declare -a casks=(
 'firefox'
 'flash'
 'flux'
+'franz'
 'google-drive-file-stream'
 'gitter'
 'google-chrome'
@@ -137,6 +140,7 @@ declare -a casks=(
 'quickbooks'
 'ringcentral'
 'screaming-frog-seo-spider'
+'signal'
 'silverlight'
 'skype'
 'slack'
