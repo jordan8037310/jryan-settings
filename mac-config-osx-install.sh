@@ -81,6 +81,7 @@ declare -a brews=(
 # Project Management
 'atlassian-cli'
 # CLI tools
+'awscli'
 's3cmd'
 )
 
