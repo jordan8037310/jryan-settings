@@ -53,6 +53,7 @@ declare -a brews=(
 'openssl'
 # Dev Tools
 'git'
+'git-extras'
 'composer'
 'webkit2png'
 'legit'
@@ -63,6 +64,7 @@ declare -a brews=(
 'drupal-code-sniffer'
 'homebrew/php/drupalconsole'
 # Python
+'autoenv'
 'python'
 'python3'
 # Platform
