@@ -23,6 +23,8 @@ declare -a taps=(
 'devinci-code/tap'
 # Cask Management
 'buo/cask-upgrade'
+# AWS
+'aws/tap'
 )
 
 for i in "${taps[@]}"
@@ -51,6 +53,7 @@ declare -a brews=(
 'phantomjs'
 'coreutils'
 'openssl'
+'pv'
 # Dev Tools
 'git'
 'git-extras'
@@ -71,9 +74,6 @@ declare -a brews=(
 'memcached'
 'imagemagick'
 # PHP
-'php56'
-'php56-igbinary'
-'php56-memcached'
 'php71'
 'brew-php-switcher'
 # Ruby
@@ -85,6 +85,7 @@ declare -a brews=(
 # CLI tools
 'awscli'
 's3cmd'
+'aws-sam-cli'
 )
 
 for i in "${brews[@]}"
